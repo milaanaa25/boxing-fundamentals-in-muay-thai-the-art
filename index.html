@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<meta name="theme-color" content="#147b52">
+<link rel="canonical" href="https://milaanaa25.github.io/boxing-fundamentals-in-muay-thai-the-art/">
+<meta property="og:image" content="https://avatars.githubusercontent.com/milaanaa25?s=460">
+<meta property="og:image:alt" content="Boxing Fundamentals in Muay Thai - The Art of Eight Limbs">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Boxing Fundamentals in Muay Thai - The Art of Eight Limbs">
+<meta name="twitter:description" content="Master boxing techniques within Muay Thai. Learn proper punching form, combinations, and how Western boxing enhances the art of eight limbs.">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/milaanaa25?s=460">
+<meta name="twitter:image:alt" content="Boxing Fundamentals in Muay Thai - The Art of Eight Limbs">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boxing Fundamentals in Muay Thai - The Art of Eight Limbs</title>
+    <meta name="description" content="Master boxing techniques within Muay Thai. Learn proper punching form, combinations, and how Western boxing enhances the art of eight limbs.">
+    <meta property="og:title" content="Boxing Fundamentals in Muay Thai">
+    <meta property="og:description" content="Master boxing techniques within Muay Thai. Learn proper punching form, combinations, and how Western boxing enhances the art of eight limbs.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23d32f2f'/%3E%3Ccircle cx='35' cy='40' r='8' fill='white'/%3E%3Ccircle cx='65' cy='40' r='8' fill='white'/%3E%3Cpath d='M30 65 Q50 75 70 65' stroke='white' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 4vw, 2rem);
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid #d32f2f;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 800;
+            color: #d32f2f;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: #d32f2f;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                        radial-gradient(circle at center, #d32f2f 0%, #8b0000 100%);
+            color: white;
+            padding: clamp(4rem, 12vw, 8rem) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #d32f2f;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid #d32f2f;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            transform: translateY(-2px);
+        }
+
+        main {
+            background: white;
+        }
+
+        .section {
+            padding: clamp(3rem, 8vw, 6rem) 0;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        .techniques-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .technique-card {
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-left: 4px solid #d32f2f;
+        }
+
+        .technique-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(211, 47, 47, 0.15);
+        }
+
+        .technique-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #d32f2f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .technique-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .fundamentals {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .fundamentals .section-title {
+            color: white;
+        }
+
+        .fundamentals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .fundamental-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(211, 47, 47, 0.3);
+        }
+
+        .fundamental-item h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #d32f2f;
+            text-transform: uppercase;
+        }
+
+        .combinations {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+        }
+
+        .combo-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .combo-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #d32f2f;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .combo-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #d32f2f;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .combo-description {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .training-tips {
+            background: #d32f2f;
+            color: white;
+        }
+
+        .training-tips .section-title {
+            color: white;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tip-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .tip-card h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .footer-content p {
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .highlight {
+            color: #d32f2f;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .techniques-grid,
+            .fundamentals-grid,
+            .combo-list,
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">MuayThai Boxing</div>
+            <ul class="nav-links">
+                <li><a href="#techniques">Techniques</a></li>
+                <li><a href="#fundamentals">Fundamentals</a></li>
+                <li><a href="#combinations">Combinations</a></li>
+                <li><a href="#training">Training</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Boxing in Muay Thai</h1>
+                <p class="hero-subtitle">Master the punching arsenal of the Art of Eight Limbs</p>
+                <a href="#techniques" class="cta-button">Learn Techniques</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="techniques" class="section">
+            <div class="container">
+                <h2 class="section-title">Core Boxing Techniques</h2>
+                <div class="techniques-grid">
+                    <div class="technique-card">
+                        <h3>Jab (Mat Trong)</h3>
+                        <p>The foundation of Muay Thai boxing. A quick, straight punch with the lead hand that sets up combinations, maintains distance, and disrupts your opponent's rhythm. Keep your shoulder high and snap the punch back quickly.</p>
+                    </div>
+                    <div class="technique-card">
+                        <h3>Cross (Mat Sai)</h3>
+                        <p>Your power punch. Thrown with the rear hand, rotating from the hips and driving through the target. The cross in Muay Thai often sets up devastating elbows and knees in the clinch.</p>
+                    </div>
+                    <div class="technique-card">
+                        <h3>Hook (Mat Wiang San)</h3>
+                        <p>A circular punch targeting the side of the head or body. In Muay Thai, hooks are particularly effective when transitioning from clinch work or after defending kicks with your arms.</p>
+                    </div>
+                    <div class="technique-card">
+                        <h3>Uppercut (Mat Soke)</h3>
+                        <p>An upward punch that targets the chin or body. Essential for close-range combat and clinch entries. Thai boxers use uppercuts to create openings for knee strikes.</p>
+                    </div>
+                    <div class="technique-card">
+                        <h3>Overhand (Mat Kratob)</h3>
+                        <p>A looping punch thrown over the opponent's guard. Particularly effective against southpaws and when your opponent has their hands low from throwing kicks.</p>
+                    </div>
+                    <div class="technique-card">
+                        <h3>Body Shots</h3>
+                        <p>Punches to the ribs, solar plexus, and liver. Body boxing in Muay Thai weakens opponents for later rounds and creates opportunities for head hunting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fundamentals" class="section fundamentals">
+            <div class="container">
+                <h2 class="section-title">Boxing Fundamentals</h2>
+                <div class="fundamentals-grid">
+                    <div class="fundamental-item">
+                        <h4>Muay Thai Stance</h4>
+                        <p>Stand with feet shoulder-width apart, lead foot slightly forward. Keep your weight evenly distributed, ready to check kicks or throw punches. Hands up, elbows tucked, chin down.</p>
+                    </div>
+                    <div class="fundamental-item">
+                        <h4>Guard Position</h4>
+                        <p>High guard with gloves protecting your temples and jaw. Unlike Western boxing, keep elbows close to defend against body kicks and knee strikes. Peek through your gloves.</p>
+                    </div>
+                    <div class="fundamental-item">
+                        <h4>Footwork</h4>
+                        <p>Small, controlled steps maintaining balance. Circle away from power hands, step in behind your jab, and always be ready to lift your knee to check incoming kicks.</p>
+                    </div>
+                    <div class="fundamental-item">
+                        <h4>Head Movement</h4>
+                        <p>Subtle slips and weaves. Avoid excessive bobbing that leaves you vulnerable to knees. Small movements with quick returns to guard position.</p>
+                    </div>
+                    <div class="fundamental-item">
+                        <h4>Range Management</h4>
+                        <p>Control the distance with jabs and footwork. Stay at punching range when advantageous, but be ready to clinch or move to kicking range when needed.</p>
+                    </div>
+                    <div class="fundamental-item">
+                        <h4>Defense Integration</h4>
+                        <p>Boxing defense must account for kicks, knees, and elbows. Keep one eye on incoming punches and another on potential leg kicks or clinch attempts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="combinations" class="section combinations">
+            <div class="container">
+                <h2 class="section-title">Essential Combinations</h2>
+                <ul class="combo-list">
+                    <li class="combo-item">
+                        <div class="combo-name">Jab-Cross</div>
+                        <div class="combo-description">The fundamental 1-2 combo. Sets up kicks, elbows, or clinch entries. Follow with a low kick or knee.</div>
+                    </li>
+                    <li class="combo-item">
+                        <div class="combo-name">Jab-Cross-Hook</div>
+                        <div class="combo-description">Classic three-punch combination. The hook can target head or body, creating openings for knee strikes.</div>
+                    </li>
+                    <li class="combo-item">
+                        <div class="combo-name">Double Jab-Cross</div>
+                        <div class="combo-description">Use the double jab to close distance and land a hard cross. Perfect setup for clinch work.</div>
+                    </li>
+                    <li class="combo-item">
+                        <div class="combo-name">Jab-Uppercut-Hook</div>
+                        <div class="combo-description">Work the head and body levels. The uppercut lifts the guard for the hook to land clean.</div>
+                    </li>
+                    <li class="combo-item">
+                        <div class="combo-name">Cross-Hook-Uppercut</div>
+                        <div class="combo-description">Power combination starting with the rear hand. Each punch opens up the next target.</div>
+                    </li>
+                    <li class="combo-item">
+                        <div class="combo-name">Body-Head Combinations</div>
+                        <div class="combo-description">Attack the body to bring the guard down, then target the head. Essential for breaking tough defenses.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="training" class="section training-tips">
+            <div class="container">
+                <h2 class="section-title">Training Methods</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>Heavy Bag Work</h4>
+                        <p>Focus on power and technique. Mix punching combinations with kicks and knees. Practice boxing while in orthodox and southpaw stances to develop ambidextrous skills.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Pad Training</h4>
+                        <p>Work with a partner holding Thai pads. Practice combinations that flow from punches to kicks to clinch work. Develop timing and accuracy under pressure.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Shadow Boxing</h4>
+                        <p>Visualize opponents and practice combinations. Include defensive movements and transitions between boxing, kicking, and clinch ranges. Focus on form and flow.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>Sparring Integration</h4>
+                        <p>Practice boxing within the full Muay Thai context. Learn to punch while defending kicks, transition from boxing to clinch, and use punches to set up other techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p><span class="highlight">Master the sweet science</span> within the art of eight limbs</p>
+                <p>Train smart. Fight hard. Respect the art.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
